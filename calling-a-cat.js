@@ -8,19 +8,19 @@
 
 // Execute: node.js calling-a-cat.js Hungarian
 
-const greetings={Hungarian:'cicc-cicc', Chinese: 'miao-miao', Tunisian: 'besh-besh', Japanese }
+const greetings = { Hungarian: 'cicc-cicc', Chinese: 'miao-miao', Tunisian: 'besh-besh', Japanese: 'neko chain oide' };
 
 function main(language) {
-  console.log('language:', language)
+  console.log('language:', language);
 
-  if (language==='Hungarian') {
-    console.log('cicc-cicc');
-
-    if (language==="Chinese")
-  }
-  // The language variable will be the language from the command line. 
-
+  
+ return greetings.language
+  
+   
+  
+  // The language variable will be the language from the command line.
 }
 
-main(process.argv[2])
+// main(process.argv[2]);
 
+console.log(main('Hungarian'))
