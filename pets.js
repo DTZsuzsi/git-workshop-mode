@@ -7,11 +7,17 @@
 //  2. Dog
 //  ...
 
-
-const pets = ['Cat', 'Dog', 'Hamster', 'Guinea Pig', 'Salmon']
+const pets = ['Cat', 'Dog', 'Hamster', 'Guinea Pig', 'Salmon'];
 
 function main() {
+  let count = 1;
+  const callingArray = [];
+  pets.forEach((pet) => {
+    callingArray.push(`${count}. ${pet}`);
+    count++;
+  });
+
+  return callingArray;
 }
 
-main()
-
+console.log(main(pets));
