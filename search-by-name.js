@@ -7,14 +7,16 @@
 //    Cirmi
 //    Cirmos
 
-
-
-const catNames = ['Cirmi', 'Cirmos', 'Vakarcs', 'Butyok', 'Bubu']
+const catNames = ['Cirmi', 'Cirmos', 'Vakarcs', 'Butyok', 'Bubu'];
 
 function main(keyword) {
-    console.log('keyword:', keyword)
-    // Tip: string.prototype.includes()
+  const filteredNames = [];
+  for (const name of catNames) {
+    if (name.includes(keyword)) {
+      filteredNames.push(name);
+    }
+  }
+  console.log(filteredNames);
 }
 
-main(process.argv[2])
-
+main('irm');
