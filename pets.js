@@ -12,7 +12,7 @@ const pets = ['Cat', 'Dog', 'Hamster', 'Guinea Pig', 'Salmon'];
 function main() {
   let count = 1;
   const callingArray = [];
-  pets.map((pet) => {
+  pets.forEach((pet) => {
     callingArray.push(`${count}. ${pet}`);
     count++;
   });
