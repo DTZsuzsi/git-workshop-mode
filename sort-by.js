@@ -55,11 +55,11 @@ const dogs = [
 function main(sortBy) {
     console.log('sortBy:', sortBy)
 
-return sortBy.sort((a,b)=>(a.name-b.name))
+return dogs.sort((a,b)=>a.name.localeCompare(b.name))
 
 }
 
 // main(process.argv[2])
 
 
-console.log(main(dogs))
+console.log(main('name'))
