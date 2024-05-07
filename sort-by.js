@@ -55,4 +55,12 @@ function main(sortBy) {
   }
 }
 
-main('age');
+  function mainName(sortBy) {
+return dogs.sort((a,b)=>a.name.localeCompare(b.name))
+
+}
+
+main(process.argv[2])
+
+
+console.log(mainName('name'))
