@@ -55,7 +55,11 @@ const dogs = [
 function main(sortBy) {
     console.log('sortBy:', sortBy)
 
+return sortBy.sort((a,b)=>(a.name-b.name))
+
 }
 
-main(process.argv[2])
+// main(process.argv[2])
 
+
+console.log(main(dogs))
